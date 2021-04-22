@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Home / Kickass Website</title>
+    <title>Contact / Kickass Website</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="home">
+<body class="contact">
 
     <header class="site-header">
         <nav class="container">
             <ul class="menu">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" id="contact">Contact</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article class="content container">
-            <h1 class="shadow">Kickass website</h1>
+        <div class="content container">
+            <h1 class="shadow">Send us an email</h1>
 
             <h2 class="shadow">
-                This website kicks all of the asses. All of them.<br> If you've got an ass, this website kicks the poo out of it.
+                We won't read it.
             </h2>
 
-            <a href="#" class="btn btn-red animate">Get a kick right in the pooper</a>
+            <form action="#" class="contact-form">
+                <label for="your-name">
+					Your name (required)
+					<input type="text" id="your-name" name="your-name">
+				</label>
 
-            <p class="small">
-                Should a kick occur, which it will, your butt cheeks will resonate.<br> Much like the wings of a butterfly, your butt might change history.
-            </p>
+                <label for="your-email">
+					Your email (required)
+					<input type="email" id="your-email" name="your-email">
+				</label>
 
-            <img src="img/marvel-yellow.png" class="bigass" alt="ms marvel">
-        </article>
+                <label for="your-message">
+					Your message
+					<textarea id="your-message" name="your-message" cols="40" rows="10"></textarea>
+				</label>
+
+                <button class="btn btn-white">Send</button>
+            </form>
+        </div>
     </main>
 
     <aside class="pre-footer">

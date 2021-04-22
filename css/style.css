@@ -1,0 +1,213 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+img {
+  border-radius: 8; }
+
+body {
+  color: #fff;
+  background: #2f313c;
+  text-align: center;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font-family: Montserrat, sans-serif; }
+
+.container {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 1em; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: .5s all ease-in-out; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle; }
+
+.menu {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+  .menu li,
+  .menu a {
+    display: inline-block; }
+
+.bigass {
+  margin-top: 2.75em;
+  border-radius: 0.75em 0.75em 0 0; }
+
+.home .content {
+  padding-bottom: 0; }
+
+::-moz-selection {
+  background: #fcbd24;
+  color: #fff; }
+
+::selection {
+  background: #fcbd24;
+  color: #fff; }
+
+h1 {
+  font-size: 4.6875em;
+  text-transform: uppercase;
+  margin-bottom: 0.29333em; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.33333em;
+  font-weight: normal; }
+
+h3 {
+  font-size: 1.375em; }
+
+.small {
+  font-size: 75%;
+  line-height: 150%;
+  margin: 0; }
+
+.site-header {
+  background: #f2f2f2; }
+  .site-header a {
+    color: #777;
+    font-size: 0.8125em;
+    padding: 1.5625em 0.5em; }
+    .site-header a:hover, .site-header a:focus {
+      color: #9d9d9d; }
+
+main {
+  background: #8fd2d1;
+  border-top: 0.0625em solid #58bcbb; }
+  .blog main {
+    background: #019DCD;
+    border-color: #01769a; }
+  .contact main {
+    background: #fd6858;
+    border-color: #fc240c; }
+  .gallery main {
+    background: #ffd256;
+    border-color: #efaf00; }
+
+.shadow {
+  text-shadow: -0.3125em 0.3125em 0px #6bc3c2; }
+  .gallery .shadow {
+    text-shadow: -0.3125em 0.3125em 0px #ffc423; }
+  .blog .shadow {
+    text-shadow: -0.3125em 0.3125em 0px #01769a; }
+  .contact .shadow {
+    text-shadow: -0.3125em 0.3125em 0px #fc3a26; }
+
+.active a {
+  color: #41a19f; }
+  .gallery .active a {
+    color: #d69d00; }
+  .blog .active a {
+    color: #003c4e; }
+  .contact .active a {
+    color: #d31703; }
+
+.content {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
+.image-grid {
+  margin-top: 3em; }
+  .image-grid img {
+    float: left;
+    width: 49%;
+    margin: .5%; }
+    @media (max-width: 40em) {
+      .image-grid img {
+        float: left;
+        width: 100%;
+        margin: 0.5em 0; } }
+  .image-grid::before, .image-grid::after {
+    content: "";
+    display: table; }
+  .image-grid::after {
+    clear: both; }
+
+.prefooter {
+  background: #363845;
+  padding: 4.25em 0 4.5em; }
+  .prefooter p {
+    color: #e6e6e6;
+    font-size: 1.125em;
+    line-height: 1.125em;
+    margin: 1.55556em 0 1.66667em; }
+
+.site-footer {
+  padding: 1.875em 0;
+  color: #8c95ad; }
+  .site-footer a,
+  .site-footer span {
+    color: rgba(140, 149, 173, 0.5); }
+  .site-footer a {
+    border-bottom: 0.0625em solid #434a5d; }
+  .site-footer span {
+    padding-left: 0.0625em; }
+
+@media (max-width: 40em) {
+    p br {
+      display: none;
+      padding: 3.375em 0 4em; } }
+
+.post-list {
+  max-width: 43.5em;
+  margin: 5.375em auto 0;
+  text-align: left; }
+  .post-list .post {
+    margin: 4em 0;
+    line-height: 1.6875em; }
+    .post-list .post p {
+      color: rgba(255, 255, 255, 0.9); }
+    .post-list .post h1 {
+      line-height: 0.84375em;
+      font-size: 2.8125em;
+      margin-bottom: 1em; }
+
+.post-title {
+  font-size: 1.875em;
+  margin-bottom: 1.13333em;
+  text-transform: none; }
+
+.contact-form {
+  max-width: 35em;
+  margin: 4.5em auto 0;
+  text-align: left; }
+  .contact-form label {
+    font-size: 1.0625em;
+    display: block;
+    margin-bottom: 1.375em; }
+
+input,
+textarea {
+  color: color-text;
+  font-size: 0.875em;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  outline: none;
+  padding: 0.625em;
+  margin-top: 0.375em;
+  display: block;
+  max-width: 100%;
+  width: 100%; }
+  input:focus,
+  textarea:focus {
+    border-color: rgba(255, 255, 255, 0.5); }
+
+@media (max-width: 40em) {
+  main {
+    font-size: 85%; }
+    main h2 br {
+      display: none; } }
